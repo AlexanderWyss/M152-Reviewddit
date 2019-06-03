@@ -3,11 +3,13 @@ var path =  require('path');
 var router = express.Router();
 var fs = require('fs');
 
+function readFile(file, callback) {
+  fs.readFile(path.join(__dirname, 'views/', file), 'utf8', callback);
+}
+
 function returnView(file, res) {
-  var file = fs.readFile(path.join(__dirname, 'views/', file), 'utf8', (err, html) => {
-    if (err) throw err;
-    fs.readFile(path.join(__dirname, 'views/header.html'), 'utf8', (err, headerHtml) => {
-      if (err) throw err;
+  readFile(file, (err, html) => {
+    readFile('header.html', (err, headerHtml) => {
       res.send(html.replace('<headerPlaceholder/>', headerHtml));
     });
   });
