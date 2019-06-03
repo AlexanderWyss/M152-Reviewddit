@@ -3,7 +3,7 @@ var path =  require('path');
 var router = express.Router();
 
 function html(file) {
-  return path.join(__dirname, '../views/', file);
+  return path.join(__dirname, 'views/', file);
 }
 
 /* GET home page. */
