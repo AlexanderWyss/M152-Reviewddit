@@ -8,9 +8,9 @@ function readFile(file, callback) {
 }
 
 function returnView(file, res) {
-  readFile(file, (err, html) => {
-    readFile('header.html', (err, headerHtml) => {
-      res.send(html.replace('<headerPlaceholder/>', headerHtml));
+  readFile('layout.html', (err, layoutHtml) => {
+    readFile(file, (err, html) => {
+      res.send(layoutHtml.replace('<body-placeholder/>', html));
     });
   });
 }
