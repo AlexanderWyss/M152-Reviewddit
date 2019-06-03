@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync').create();
 
-gulp.task('gulp_nodemon', async function() {
+gulp.task('gulp_nodemon', function() {
   nodemon({
     script: './bin/www', //this is where my express server is
     ext: 'js html scss', //nodemon watches *.js, *.html and *.css files
@@ -10,7 +10,7 @@ gulp.task('gulp_nodemon', async function() {
   });
 });
 
-gulp.task('sync', async function() {
+gulp.task('sync', function() {
   browserSync.init({
     port: 3002, //this can be any port, it will show our app
     proxy: 'http://localhost:3000/', //this is the port where express server works
