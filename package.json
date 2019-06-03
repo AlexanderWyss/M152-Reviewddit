@@ -1,0 +1,33 @@
+{
+  "name": "m152-reviewddit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "serve": "nodemon ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderWyss/M152-Reviewddit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexanderWyss/M152-Reviewddit/issues"
+  },
+  "homepage": "https://github.com/AlexanderWyss/M152-Reviewddit#readme"
+}
