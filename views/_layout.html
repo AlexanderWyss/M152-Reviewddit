@@ -8,11 +8,27 @@
 </head>
 </head>
 <body>
-    <h1>Im a header</h1>
-    <div>
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/logo.svg">
+            <p class="title">Reviewddit</p>
+            <input type="button" value="Create"/>
+        </div>
+        <div class="search-container">
+            <input type="search" placeholder="Suchen">
+        </div>
+        <div class="category-container">
+            <select>
+                <option>Kategorie</option>
+            </select>
+        </div>
+    </header>
+    <div class="container">
         {{body-placeholder}}
     </div>
-    <small>Im a footer</small>
+    <footer>
+        <small>&copy; 2019 Reviewddit</small>
+    </footer>
 </body>
 </html>
 
