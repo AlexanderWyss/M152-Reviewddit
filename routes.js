@@ -7,21 +7,23 @@ function readFile(file, callback) {
   fs.readFile(path.join(__dirname, 'views/', file), 'utf8', callback);
 }
 
-function returnView(file, res) {
-  readFile('layout.html', (err, layoutHtml) => {
-    readFile(file, (err, html) => {
-      res.send(layoutHtml.replace('<body-placeholder/>', html));
+function returnView(name, res, title='Reviewddit') {
+  readFile('_layout.html', (err, layoutHtml) => {
+    layoutHtml = layoutHtml.replace('{{stylesheet-placeholder}}', `${name}.css`)
+                           .replace('{{title-placeholder}}', title);
+    readFile(`${name}.html`, (err, html) => {
+      res.send(layoutHtml.replace('{{body-placeholder}}', html));
     });
   });
 }
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  returnView('./index.html', res);
+  returnView('home', res);
 });
 
 router.get('/create-review', function(req, res, next) {
-  returnView('./createReview.html', res);
+  returnView('createReview', res, 'Create Review');
 });
  
 

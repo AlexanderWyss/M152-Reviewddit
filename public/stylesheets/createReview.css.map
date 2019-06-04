@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "createReview.css",
+	"sources": [
+		"../../stylesheets/createReview.scss",
+		"../../stylesheets/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,CAAC,CAAC;EACE,KAAK,ECHC,IAAI,GDIb"
+}
