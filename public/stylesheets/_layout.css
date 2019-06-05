@@ -10,9 +10,7 @@ header {
   height: 4rem;
   width: 100%;
   border-bottom: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  display: flex; }
   header .logo-container {
     display: flex;
     align-items: center;
@@ -51,15 +49,14 @@ header {
 footer {
   position: fixed;
   bottom: 0px;
-  left: 0px;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
   background-color: white;
   height: 2rem;
-  width: calc(100% - 2rem);
-  border-top: 1px solid lightgray;
-  margin: 0rem 1rem; }
+  margin: 0rem 1rem;
+  width: calc(100% - 2 * 1rem);
+  border-top: 1px solid lightgray; }
 
 /*# sourceMappingURL=_layout.css.map */

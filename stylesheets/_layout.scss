@@ -9,12 +9,10 @@ header {
   top: 0px;
   z-index: 999;
   background-color: white;
-  height: 4rem;
+  height: $header-height;
   width: 100%;
   border-bottom: 1px solid black;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   .logo-container {
     display: flex;
@@ -67,21 +65,21 @@ header {
 }
 
 .container {
-  margin-top: 4rem;
+  margin-top: $header-height;
   padding: 1rem;
 }
 
 footer {
   position: fixed;
   bottom: 0px;
-  left: 0px;
+  z-index: 999;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
   background-color: white;
   height: 2rem;
-  width: calc(100% - 2rem);
+  $margin: 1rem;
+  margin: 0rem $margin;
+  width: calc(100% - 2 * #{$margin});
   border-top: 1px solid lightgray;
-  margin: 0rem 1rem;
 }
