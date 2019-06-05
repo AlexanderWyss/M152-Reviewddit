@@ -20,8 +20,9 @@ header {
       height: 100%;
       width: auto; }
     header .logo-container .title {
-      font-size: 1.5em;
-      margin: 0.3rem; }
+      font-size: 1.5em; }
+    header .logo-container * {
+      margin: 0.2rem; }
   header .search-container {
     display: flex;
     justify-content: center;
