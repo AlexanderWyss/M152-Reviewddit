@@ -10,7 +10,7 @@
     padding: 0.3rem;
     margin: 0.5rem;
     width: 20rem;
-    max-height: 20rem;
+    height: 15rem;
     word-wrap: break-word; }
     .home-container .post * {
       max-width: 100%;
@@ -20,7 +20,7 @@
       align-items: center;
       flex-direction: column;
       margin: 0.3rem 0;
-      max-height: calc(20rem - (0.3rem * 2) - (2.5rem * 2));
+      height: calc(15rem - (0.3rem * 2) - (2.5rem * 2));
       overflow: hidden; }
       .home-container .post .content-preview img {
         width: 90%;

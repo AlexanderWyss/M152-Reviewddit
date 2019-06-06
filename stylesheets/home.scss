@@ -3,7 +3,7 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    $max-post-height: 20rem;
+    $max-post-height: 15rem;
     $content-margin: 0.3rem;
     $title-bottom-height: 2.5rem;
 
@@ -17,7 +17,7 @@
         padding: 0.3rem;
         margin: 0.5rem;
         width: 20rem;
-        max-height: $max-post-height;
+        height: $max-post-height;
         word-wrap: break-word;
 
         * {
@@ -30,7 +30,7 @@
             align-items: center;
             flex-direction: column;
             margin: $content-margin 0;
-            max-height: calc(#{$max-post-height} - (#{$content-margin} * 2) - (#{$title-bottom-height} * 2));
+            height: calc(#{$max-post-height} - (#{$content-margin} * 2) - (#{$title-bottom-height} * 2));
             overflow: hidden;
 
             img {
