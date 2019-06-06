@@ -1,32 +1,82 @@
 @import 'variables';
-
+.create-review{
+    display: none;
+}
 
 .postReview{
-
     display: flex;
     justify-content: center;
 }
+
 #header{
-    background-color: green;
     display: flex;
     justify-content: center;
     border-bottom: solid;
 }
+
 .frame{
     border-style: solid;
     width: 75%;
 }
+
 .input{
     display: flex;
     justify-content: center;
 }
+
 input{
     width: 80%;
 }
+
 .rating{
     display: flex;
     justify-content: center;
 }
-.titel{
+
+.title{
     padding-left: 2rem;
 }
+h1{
+    font-size:calc(12px + 1vw);
+}
+h2{
+    font-size:calc(12px + 0.7vw);
+}
+.dropdownCategories{
+    display: flex;
+    justify-content: center;
+}
+select{
+    width: 80%;
+}
+.upload{
+    display: flex;
+    justify-content: center;
+}
+
+.uploadImage{
+    width: 10%;
+}
+
+.ratingImage{
+    width: 25%;
+}
+.submitButton{
+    float: right;
+    width: 20%;
+}
+.cancelButton{
+    float: left;
+    width: 20%;
+}
+#footer{
+    padding: 2rem;
+
+}
+@media(max-width: 439px ){
+    .titel{
+       text-align: center;
+        padding-right: 2rem;
+    }
+}
+

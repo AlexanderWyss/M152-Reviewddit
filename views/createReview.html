@@ -3,14 +3,44 @@
         <div id="header">
             <h1>Post Review</h1>
         </div>
-         <div class="titel">
+         <div class="title">
              <h2>Titel</h2>
          </div>
         <div class="input">
-            <input type="text" name="titel" placeholder="Geben Sie einen passenden Titel ein"/>
+            <input type="text" name="title" placeholder="Geben Sie einen passenden Titel ein"/>
+        </div>
+        <div class="title">
+            <h2>Bewertung</h2>
         </div>
         <div class="rating">
-            <img src="images/sterneBewertungEmpty.png">
+            <img class="ratingImage" src="images/sterneBewertungEmpty.png" name="ratingImage">
+        </div>
+        <div class="title">
+            <h2>Kategorie</h2>
+        </div>
+        <div class="dropdownCategories">
+            <select>
+                <option value="Testee">Testee</option>
+                <option value="Testee">Testee</option>
+                <option value="Testee">Testee</option>
+                <option value="Testee">Testee</option>
+            </select>
+        </div>
+        <div class="title">
+            <h2>Upload Media</h2>
+        </div>
+        <div class="upload">
+            <input type="image" class="uploadImage" src="images/upload.svg"/>
+        </div>
+        <div class="title">
+            <h2>Informationen</h2>
+        </div>
+        <div class="input">
+            <input type="text" name="description" placeholder="Geben Sie eine Beschreibung ein"/>
+        </div>
+        <div id="footer">
+            <input type="button" class="submitButton" type="submit"  value="Erstellen"/>
+            <input type="button" class="cancelButton"value="Abbrechen"/>
         </div>
     </div>
 </div>
