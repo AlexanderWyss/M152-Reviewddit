@@ -25,6 +25,8 @@
       .home-container .post .content-preview img {
         width: 90%;
         height: auto; }
+      .home-container .post .content-preview p {
+        margin: 0; }
     .home-container .post .title img {
       height: 2rem; }
     .home-container .post .title span {
