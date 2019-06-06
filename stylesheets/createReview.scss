@@ -56,6 +56,7 @@ select{
 
 .uploadImage{
     width: 10%;
+    min-width: 40px;
 }
 
 .ratingImage{
@@ -64,13 +65,16 @@ select{
 .submitButton{
     float: right;
     width: 20%;
+    min-width: 76px;
 }
 .cancelButton{
     float: left;
     width: 20%;
+    min-width: 76px;
 }
 #footer{
-    padding: 2rem;
+    padding: 1rem 1rem 2rem 1rem;
+
 
 }
 @media(max-width: 439px ){
