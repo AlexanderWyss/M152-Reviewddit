@@ -1,5 +1,32 @@
 @import 'variables';
 
-p {
-    color: $example;
+
+.postReview{
+
+    display: flex;
+    justify-content: center;
+}
+#header{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid;
+}
+.frame{
+    border-style: solid;
+    width: 75%;
+}
+.input{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 80%;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+}
+.titel{
+    padding-left: 2rem;
 }
