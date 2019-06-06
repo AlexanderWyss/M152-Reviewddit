@@ -90,6 +90,6 @@ select{
     }
 }
 
-input:not([type='button']):not([type='image']), select {
-    height: 2vw;
+input:not([type='image']), select {
+    height: 2rem;
 }
