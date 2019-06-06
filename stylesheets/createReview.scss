@@ -89,3 +89,7 @@ select{
         padding-right: 2rem;
     }
 }
+
+input:not([type='button']):not([type='image']), select {
+    height: 2vw;
+}
