@@ -1,6 +1,11 @@
+html {
+  height: 100%;
+}
+
 body {
   font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0px;
+  height: 100%;
 }
 
 $header-height: 4rem;
@@ -70,6 +75,7 @@ header {
 .container {
   margin-top: $header-height;
   padding: 1rem;
+  height: 100%;
 }
 
 footer {
