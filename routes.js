@@ -21,7 +21,9 @@ function returnView(name, res, title='Reviewddit') {
 router.get('/', function(req, res, next) {
   returnView('home', res);
 });
-
+router.get('/review-details', function(req, res, next) {
+  returnView('reviewDetails', res, 'Review Details');
+});
 router.get('/create-review', function(req, res, next) {
   returnView('createReview', res, 'Create Review');
 });
