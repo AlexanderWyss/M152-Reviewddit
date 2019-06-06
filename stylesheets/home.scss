@@ -33,11 +33,6 @@
             height: calc(#{$max-post-height} - (#{$content-margin} * 2) - (#{$title-bottom-height} * 2));
             overflow: hidden;
 
-            img {
-                width: 90%;
-                height: auto;
-            }
-
             p {
                 margin: 0;
             }
