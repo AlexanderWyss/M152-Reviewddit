@@ -36,7 +36,7 @@ textarea{
 }
 
 .title{
-    padding-left: 2rem;
+    padding-left: 10%;
 }
 h1{
     font-size:calc(12px + 1vw);
@@ -57,7 +57,7 @@ select{
 }
 
 .uploadImage{
-    width: 8%;
+    width: 7%;
     min-width: 40px;
 }
 
@@ -86,10 +86,6 @@ select{
     }
 }
 
-.rate {
-
-    padding: 0 10px;
-}
 .rate:not(:checked) > input {
     position:absolute;
     top:-9999px;
