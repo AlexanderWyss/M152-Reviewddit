@@ -6,9 +6,10 @@
 
 #card {
     width: 75%;
-    height: 90%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 2em;
 
     border: 1px;
     border-style: solid;
@@ -24,8 +25,12 @@
     background-color: gainsboro;
 
     img {
-        width: 30%;
-        height: 35%;
+        max-width: 30%;
+        max-height: 35%;
+    }
+
+    h2 {
+        width: 75%;
     }
 }
 
@@ -34,6 +39,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    input {
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+    button {
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    #info {
+        font-size: 2.5vw;
+        margin: 0 1em 1em 1em;
+    }
+}
+
+#input {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
 }
 
 #picture {
@@ -41,12 +67,12 @@
     width: 90%;
     height: 40%;
     display: flex;
-    border-width: 2px;
-    border-style: solid;
+    justify-content: center;
     word-wrap: normal;
 
     img {
-        width: 100%;
+        max-width: 400px;
+        max-height: 300px;
     }
 }
 
@@ -56,9 +82,11 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    overflow: scroll;
 }
 
 #comment {
+    font-size: 2vw;
     margin-bottom: 5px;
     padding-left: 5px;
     border-style: solid;
@@ -67,11 +95,15 @@
     border-color: gray;
 }
 
-input {
-    margin-bottom: 1em;
-    width: 90%;
-}
-
-h2 {
-    width: 65%;
+@media(max-width: 600px) {
+    #input {
+        flex-direction: column;
+        button {
+            align-self: center;
+            margin-left: 0;
+            margin-bottom: 1em;
+            width: 50%;
+            overflow: hidden;
+        }
+    }
 }
