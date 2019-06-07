@@ -9,26 +9,23 @@
   flex-direction: column;
   overflow: hidden;
   margin-bottom: 2em;
-
-  border: 1px;
   border-style: solid;
-  border-color: black;
+
 }
 
 #title {
   padding-left: 1em;
   display: flex;
-
-  align-items: center;
-  background-color: gainsboro;
+  border-bottom: solid;
 
   img {
-    max-width: 30%;
-    max-height: 35%;
+    width: 17%;
+    padding: 1rem;
+    min-width: 70px;
   }
 
   h2 {
-    width: 75%;
+    font-size: calc(12px + 0.7vw);
   }
 }
 
@@ -71,7 +68,6 @@
     max-height: 300px;
   }
 }
-
 #commentsection {
   width: 90%;
   display: flex;
@@ -85,12 +81,20 @@
   border-style: solid;
   border-radius: 5px;
   border-width: 2px;
-  border-color: gray;
+}
+button{
+  width: 10%;
+}
+
+input:not([type="image"]),
+select {
+  height: 1.5rem;
 }
 
 @media (max-width: 600px) {
   #input {
     flex-direction: column;
+
     button {
       align-self: center;
       margin-left: 0;
