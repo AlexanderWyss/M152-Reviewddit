@@ -3,14 +3,55 @@
         <div id="header">
             <h1>Post Review</h1>
         </div>
-         <div class="titel">
+         <div class="titleCreate">
              <h2>Titel</h2>
          </div>
         <div class="input">
-            <input type="text" name="titel" placeholder="Geben Sie einen passenden Titel ein"/>
+            <input type="text" name="title" placeholder="Geben Sie einen passenden Titel ein"/>
+        </div>
+        <div class="titleCreate">
+            <h2>Bewertung</h2>
         </div>
         <div class="rating">
-            <img src="images/sterneBewertungEmpty.png">
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+            </div>
+        </div>
+        <div class="titleCreate">
+            <h2>Kategorie</h2>
+        </div>
+        <div class="dropdownCategories">
+            <select>
+                <option value="Testee">Testee</option>
+                <option value="Testee">Testee</option>
+                <option value="Testee">Testee</option>
+                <option value="Testee">Testee</option>
+            </select>
+        </div>
+        <div class="titleCreate">
+            <h2>Upload Media</h2>
+        </div>
+        <div class="upload">
+            <input type="image" class="uploadImage" src="images/upload.svg"/>
+        </div>
+        <div class="titleCreate">
+            <h2>Informationen</h2>
+        </div>
+        <div class="input">
+            <textarea placeholder="Geben Sie eine Beschreibung ein" name="description" rows="1" cols="50"></textarea>
+        </div>
+        <div id="footer">
+            <input type="button" class="submitButton" type="submit"  value="Erstellen"/>
+            <input type="button" class="cancelButton"value="Abbrechen"/>
         </div>
     </div>
 </div>

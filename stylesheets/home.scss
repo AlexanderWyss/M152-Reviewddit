@@ -1,28 +1,64 @@
 .home-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex: 1 1 auto;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    .post {
-        border: 1px solid black;
-        padding: 0.3rem;
-        margin: 0.5rem;
-        width: 20rem;
+  $max-post-height: 18rem;
+  $content-margin: 0.3rem;
+  $title-bottom-height: 2.5rem;
+  .post {
+    border: 1px solid black;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    width: 20rem;
+    height: $max-post-height;
+    word-wrap: break-word;
 
-        .content-preview {
-            display: flex;
-            justify-content: center;
-        }
-
-        p {
-            margin: 1px;
-        }
-
-        img {
-            width: 90%;
-            height: auto;
-        }
+    > a {
+      color: inherit;
+      text-decoration: none;
     }
+
+    * {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .content-preview {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: $content-margin 0;
+      height: calc(#{$max-post-height} - (#{$content-margin} * 2) - (#{$title-bottom-height} * 2));
+      overflow: hidden;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .title {
+      img {
+        height: 2rem;
+      }
+
+      span {
+        max-width: 55%;
+      }
+    }
+
+    .bottom,
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: $title-bottom-height;
+      overflow: hidden;
+    }
+  }
+}
+
+.body {
+  display: flex;
+  justify-content: center;
 }

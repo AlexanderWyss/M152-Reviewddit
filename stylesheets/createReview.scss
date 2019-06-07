@@ -1,32 +1,97 @@
 @import 'variables';
+@import 'stars';
 
+.create-review{
+    display: none;
+
+}
 
 .postReview{
-
     display: flex;
     justify-content: center;
 }
+
 #header{
-    background-color: green;
     display: flex;
     justify-content: center;
     border-bottom: solid;
 }
+
 .frame{
     border-style: solid;
     width: 75%;
 }
+
 .input{
     display: flex;
     justify-content: center;
 }
+
 input{
     width: 80%;
+}
+
+textarea{
+  width: 80%;
+  max-width: 80%;
+  min-width: 10px;
 }
 .rating{
     display: flex;
     justify-content: center;
 }
-.titel{
-    padding-left: 2rem;
+
+.titleCreate{
+    padding-left: 10%;
+}
+h1{
+    font-size:calc(12px + 1vw);
+}
+h2{
+    font-size:calc(12px + 0.7vw);
+}
+.dropdownCategories{
+    display: flex;
+    justify-content: center;
+}
+select{
+    width: 80%;
+}
+.upload{
+    display: flex;
+    justify-content: center;
+}
+
+.uploadImage{
+    width: 7%;
+    min-width: 40px;
+}
+
+.ratingImage{
+    width: 25%;
+}
+.submitButton{
+    float: right;
+    width: 20%;
+    min-width: 76px;
+}
+.cancelButton{
+    float: left;
+    width: 20%;
+    min-width: 76px;
+}
+#footer{
+    padding: 1rem 1rem 3rem 1rem;
+
+
+}
+@media(max-width: 439px ){
+    .title{
+       text-align: center;
+        padding-right: 2rem;
+    }
+}
+
+input:not([type='image']), select {
+    height: 2rem;
 }
