@@ -9,10 +9,10 @@ function readFile(file, callback) {
 
 function returnView(name, res, title='Reviewddit') {
   readFile('_layout.html', (err, layoutHtml) => {
-    layoutHtml = layoutHtml.replace('{{stylesheet-placeholder}}', `${name}.css`)
-                           .replace('{{title-placeholder}}', title);
+    layoutHtml = layoutHtml.replace(/{{stylesheet-placeholder}}/g, name)
+                           .replace(/{{title-placeholder}}/g, title);
     readFile(`${name}.html`, (err, html) => {
-      res.send(layoutHtml.replace('{{body-placeholder}}', html));
+      res.send(layoutHtml.replace(/{{body-placeholder}}/g, html));
     });
   });
 }
