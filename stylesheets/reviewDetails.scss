@@ -4,8 +4,28 @@
     justify-content: center;
 }
 
+#card {
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
 #title {
-    background-color: orange;
+    font-size: 2vw;
+    padding-left: 1em;
+    background-color: gainsboro;
+}
+
+#content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #picture {
@@ -13,17 +33,33 @@
     width: 90%;
     height: 50%;
     border-style: solid;
+    word-wrap: normal;
 }
 
-#card {
-    width: 75%;
-    height: 80%;
+#commentsection {
+    width: 90%;
+    height: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: aquamarine;
-
-    border: 1px;
+    flex-wrap: nowrap;
     border-style: solid;
-    border-color: black;
+    overflow: scroll;
+}
+
+#comment {
+    margin: 0 1em 0 1em;
+}
+
+input {
+    margin-top: 2em;
+    width: 90%;
+}
+
+h1 {
+    width: 50%;
+}
+
+img {
+    width: 40%;
+    height: 30%;
 }
