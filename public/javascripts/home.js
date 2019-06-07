@@ -18,7 +18,7 @@ var contents = [
 ];
 var home = document.getElementById('home-container');
 
-for(var i = 0; i < 20; i++) {
+for (var i = 0; i < 20; i++) {
     if (i < contents.length) {
         addPost(i);
     } else {
@@ -27,16 +27,16 @@ for(var i = 0; i < 20; i++) {
 }
 
 function addPost(contentIndex) {
-    home.insertAdjacentHTML('beforeend', 
-    post
-    .replace(/{{title}}/g, 'Title')
-    .replace(/{{content}}/g, contents[contentIndex != undefined ? contentIndex : Math.floor(Math.random() * contents.length)])
-    .replace(/{{score}}/g, Math.floor(Math.random() * 1000))
-    .replace(/{{number-of-comments}}/, Math.floor(Math.random() * 100))
+    home.insertAdjacentHTML('beforeend',
+        post
+            .replace(/{{title}}/g, 'Title')
+            .replace(/{{content}}/g, contents[contentIndex != undefined ? contentIndex : Math.floor(Math.random() * contents.length)])
+            .replace(/{{score}}/g, Math.floor(Math.random() * 1000))
+            .replace(/{{number-of-comments}}/, Math.floor(Math.random() * 100))
     );
 }
 
-window.onscroll = function(ev) {
+window.onscroll = function (ev) {
     if ((window.innerHeight * 2 + window.scrollY) >= home.offsetHeight) {
         addPost();
     }

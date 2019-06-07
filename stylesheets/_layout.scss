@@ -24,15 +24,16 @@ header {
     flex: 1 1 20%;
     height: 100%;
 
-    .logo, .logo-link {
+    .logo,
+    .logo-link {
       height: 100%;
       width: auto;
     }
-  
+
     .title {
       font-size: 1.5em;
     }
-    
+
     > * {
       margin: 0.2rem;
     }
@@ -44,10 +45,10 @@ header {
     align-items: center;
     flex: 1 1 50%;
     input {
-      width: 90%
+      width: 90%;
     }
   }
-  
+
   .category-container {
     display: flex;
     justify-content: center;
@@ -58,7 +59,8 @@ header {
     }
   }
 
-  input, select {
+  input,
+  select {
     height: 1.5rem;
   }
 
