@@ -14,7 +14,8 @@ var contents = [
     Lorem Ipsum.
     </p>`,
     `<audio src="audio/audio.wav" controls></audio>`,
-    `<video src="video/video.mp4" controls></audio>`
+    `<video src="video/video.mp4" controls></audio>`,
+    `<img src="images/index.png">`
 ];
 var home = document.getElementById('home-container');
 
