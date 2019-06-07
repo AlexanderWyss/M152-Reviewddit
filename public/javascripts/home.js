@@ -38,6 +38,8 @@ function addPost(contentIndex) {
 
 window.onscroll = function (ev) {
     if ((window.innerHeight * 2 + window.scrollY) >= home.offsetHeight) {
-        addPost();
+        for (var i = 0; i < 5; i++) {
+            addPost();
+        }
     }
 };
