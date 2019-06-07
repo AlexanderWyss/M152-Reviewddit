@@ -6,7 +6,7 @@
 
 #card {
     width: 75%;
-    height: 80%;
+    height: 90%;
     display: flex;
     flex-direction: column;
 
@@ -18,7 +18,15 @@
 #title {
     font-size: 2vw;
     padding-left: 1em;
+    display: flex;
+    
+    align-items: center;
     background-color: gainsboro;
+
+    img {
+        width: 30%;
+        height: 35%;
+    }
 }
 
 #content {
@@ -31,35 +39,39 @@
 #picture {
     margin: 1em;
     width: 90%;
-    height: 50%;
+    height: 40%;
+    display: flex;
+    border-width: 2px;
     border-style: solid;
     word-wrap: normal;
+
+    img {
+        width: 100%;
+    }
 }
 
 #commentsection {
     width: 90%;
-    height: 25%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    border-style: solid;
-    overflow: scroll;
 }
 
 #comment {
-    margin: 0 1em 0 1em;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: gray;
 }
 
 input {
-    margin-top: 2em;
+    margin-bottom: 1em;
     width: 90%;
 }
 
-h1 {
-    width: 50%;
-}
-
-img {
-    width: 40%;
-    height: 30%;
+h2 {
+    width: 65%;
 }
