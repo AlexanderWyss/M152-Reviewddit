@@ -83,6 +83,7 @@
 }
 button{
   width: 10%;
+  min-width: 4rem;
 }
 
 input:not([type="image"]),
@@ -101,5 +102,11 @@ select {
       width: 50%;
       overflow: hidden;
     }
+  }
+
+}
+@media (max-width: 480px) {
+  #card {
+    width: 100%;
   }
 }
