@@ -49,9 +49,12 @@ textarea {
 }
 h1 {
   font-size: calc(12px + 1vw);
+  color: $mainTitleColor;
 }
 h2 {
   font-size: calc(12px + 0.7vw);
+  color: $titleColor;
+
 }
 .dropdownCategories {
   display: flex;
