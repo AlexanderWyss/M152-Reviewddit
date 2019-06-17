@@ -80,11 +80,28 @@ select {
   float: right;
   width: 20%;
   min-width: 76px;
+  box-shadow:$buttonHover;
+  background-color: limegreen;
+  color: white;
+  opacity: 0.6;
+  height: 2.5rem;
+}
+.submitButton:hover   {
+  opacity:1;
 }
 .cancelButton {
   float: left;
   width: 20%;
   min-width: 76px;
+  box-shadow:$buttonHover;
+  background-color: red;
+  color: white;
+  opacity: 0.6;
+  height: 2.5rem;
+
+}
+.cancelButton:hover   {
+  opacity:1;
 }
 #footer {
   padding: 1rem 1rem 3rem 1rem;
@@ -100,7 +117,7 @@ select {
   }
 }
 
-input:not([type="image"]),
+input:not([type="image"]):not([type="button"]),
 select {
   height: 2rem;
 }
