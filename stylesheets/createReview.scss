@@ -79,29 +79,29 @@ select {
 .submitButton {
   float: right;
   width: 20%;
-  min-width: 76px;
+  min-width: 82px;
   box-shadow:$buttonHover;
   background-color: limegreen;
   color: white;
-  opacity: 0.6;
+  opacity: $opacityNoHoverButton;
   height: 2.5rem;
 }
 .submitButton:hover   {
-  opacity:1;
+  opacity:$opacityHoverButton;
 }
 .cancelButton {
   float: left;
   width: 20%;
-  min-width: 76px;
+  min-width: 82px;
   box-shadow:$buttonHover;
   background-color: red;
   color: white;
-  opacity: 0.6;
+  opacity: $opacityNoHoverButton;
   height: 2.5rem;
 
 }
 .cancelButton:hover   {
-  opacity:1;
+  opacity:$opacityHoverButton;
 }
 #footer {
   padding: 1rem 1rem 3rem 1rem;
