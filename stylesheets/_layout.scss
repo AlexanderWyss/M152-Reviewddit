@@ -39,11 +39,12 @@ header {
     > * {
       margin: 0.2rem;
     }
+
+    .create-review{
+      width: 2.5rem;
+    }
   }
-  .create-review{
-    width: 10%;
-    min-width: 2rem;
-  }
+
   .search-container {
     display: flex;
     justify-content: center;
@@ -82,9 +83,7 @@ header {
   margin-top: $header-height;
   padding: 1rem;
 }
-#uploadImage{
-  width: 4rem;
-}
+
 footer {
   position: fixed;
   bottom: 0px;
