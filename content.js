@@ -1,14 +1,8 @@
 exports.posts = [{
-        title: 'What is Lorem Ipsum?',
+        title: 'Hobbit',
         file: '',
-        text: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-            but also the leap into electronic typesetting, remaining essentially unchanged. It was
-            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus PageMaker including versions of
-            Lorem Ipsum.`,
-        rating: 3
+        text: 'Ich möchte eine Review zum besten Buch machen, welches ich sicherlich schon etwa 10 mal gelesen habe. Es geht um das Buch Hobbit. Im Buch wird uns eine Geschichte erzählt über einen kleinen Hobbit der sein ruhiges leben genisst und nichts von Abenteuer hält. Eines Tages war es aber mit dieser Ruhe vorbei und der Hobbit befand sich in mitten eines Abenteuers. Er kämpft gegen Trolle oder auch Drachen und gelangt an die wunderbarsten orten die man sich nur vorstellen kann. Aber ich möchte nicht zu viel verraten. Ich wünsche viel Spass bei deinem Abenteuer mit diesem Buch.',
+        rating: 4
     },
     {
         title: 'Happy Birthday',
