@@ -13,7 +13,7 @@ exports.posts = [{
     {
         title: 'Happy Birthday',
         file: `<audio src="/reviews/audio/happy-birthday.mp3" controls></audio>`,
-        text: 'Dieses Lied hat den Namen "Happy Birthday" Ich bin mir sicher, dass ihr das noch nicht gehört habt. Es ist von einem amerikanischen Komponisten mit dem Alias Obama, letzten Monat veröffentlicht worden. Komische Idee einer Person zum Geburtstag ein Lied vorzusingen Aber warum auch nicht? Wem tut das schon weh? Auf jeden Fall hörenswert!',
+        text: 'Dieses Lied hat den Namen "Happy Birthday" Ich bin mir sicher, dass ihr das noch nicht gehört habt. Es ist von einem schweizer Komponisten mit dem Namen Nico Schneider, letzten Monat veröffentlicht worden. Komische Idee einer Person zum Geburtstag ein Lied vorzusingen Aber warum auch nicht? Wem tut das schon weh? Auf jeden Fall hörenswert!',
         rating: 4
     },
     {
