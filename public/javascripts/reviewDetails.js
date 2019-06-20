@@ -23,11 +23,11 @@ function addComent(text) {
     );
 }
 
-for (var i = 0; i <  Math.floor(Math.random() * 50); i++) {
+for (var i = 0; i < Math.floor(Math.random() * 50); i++) {
     addComent(comments[Math.floor(Math.random() * comments.length)]);
 }
 
-function isEmptyOrSpaces(str){
+function isEmptyOrSpaces(str) {
     return str === null || str.match(/^ *$/) !== null;
 }
 
@@ -42,30 +42,36 @@ function postComment() {
 function upvote() {
     var score = getScore();
     addPoint(score, 1);
+    removeDownvote();
     score.querySelector('.upvoted').removeAttribute('hidden');
     score.querySelector('.upvote').setAttribute('hidden', '');
-    
+
 }
 
 function removeUpvote() {
     var score = getScore();
-    addPoint(score, -1);
-    score.querySelector('.upvote').removeAttribute('hidden');
-    score.querySelector('.upvoted').setAttribute('hidden', '');
+    if (score.querySelector('.upvote').hasAttribute('hidden')) {
+        addPoint(score, -1);
+        score.querySelector('.upvote').removeAttribute('hidden');
+        score.querySelector('.upvoted').setAttribute('hidden', '');
+    }
 }
 
 function downvote() {
     var score = getScore();
     addPoint(score, -1);
+    removeUpvote();
     score.querySelector('.downvoted').removeAttribute('hidden');
     score.querySelector('.downvote').setAttribute('hidden', '');
 }
 
 function removeDownvote() {
     var score = getScore();
-    addPoint(score, 1);
-    score.querySelector('.downvote').removeAttribute('hidden');
-    score.querySelector('.downvoted').setAttribute('hidden', '');
+    if (score.querySelector('.downvote').hasAttribute('hidden')) {
+        addPoint(score, 1);
+        score.querySelector('.downvote').removeAttribute('hidden');
+        score.querySelector('.downvoted').setAttribute('hidden', '');
+    }
 }
 
 function getScore() {

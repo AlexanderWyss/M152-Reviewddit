@@ -12,7 +12,7 @@ function addPost(contentIndex = Math.floor(Math.random() * contents.length)) {
         .replace(/{{file}}/g, content.file)
         .replace(/{{text}}/g, content.text)
         .replace(/{{score}}/g, Math.floor(Math.random() * 1000))
-        .replace(/{{number-of-comments}}/g, Math.floor(Math.random() * 100))        
+        .replace(/{{number-of-comments}}/g, Math.floor(Math.random() * 100))
         .replace(/{{rating}}/g, content.rating)
         .replace(/{{id}}/g, contentIndex)
     );
@@ -50,30 +50,36 @@ httpRequest.send();
 function upvote(id) {
     var score = getScore(id);
     addPoint(score, 1);
+    removeDownvote(id);
     score.querySelector('.upvoted').removeAttribute('hidden');
     score.querySelector('.upvote').setAttribute('hidden', '');
-    
+
 }
 
 function removeUpvote(id) {
     var score = getScore(id);
-    addPoint(score, -1);
-    score.querySelector('.upvote').removeAttribute('hidden');
-    score.querySelector('.upvoted').setAttribute('hidden', '');
+    if (score.querySelector('.upvote').hasAttribute('hidden')) {
+        addPoint(score, -1);
+        score.querySelector('.upvote').removeAttribute('hidden');
+        score.querySelector('.upvoted').setAttribute('hidden', '');
+    }
 }
 
 function downvote(id) {
     var score = getScore(id);
     addPoint(score, -1);
+    removeUpvote(id);
     score.querySelector('.downvoted').removeAttribute('hidden');
     score.querySelector('.downvote').setAttribute('hidden', '');
 }
 
 function removeDownvote(id) {
     var score = getScore(id);
-    addPoint(score, 1);
-    score.querySelector('.downvote').removeAttribute('hidden');
-    score.querySelector('.downvoted').setAttribute('hidden', '');
+    if (score.querySelector('.downvote').hasAttribute('hidden')) {
+        addPoint(score, 1);
+        score.querySelector('.downvote').removeAttribute('hidden');
+        score.querySelector('.downvoted').setAttribute('hidden', '');
+    }
 }
 
 function getScore(id) {
