@@ -41,9 +41,12 @@ header {
     > * {
       margin: 0.2rem;
     }
-    
-    .create-review{
-      width: 2.5rem;
+
+    .create-review {
+      height: 60%;
+      img {
+        height: 100%;
+      }
     }
   }
 
