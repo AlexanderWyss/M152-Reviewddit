@@ -38,15 +38,14 @@
   flex-direction: column;
   align-items: center;
 
-  input {
-    margin-bottom: 1em;
+  .commentInput {
+    margin-bottom: 1rem;
     width: 100%;
-
   }
 
-  button {
-    margin-bottom: 1em;
-    margin-left: 1em;
+  .submit {
+    margin-left: 1rem;    
+    margin-bottom: 1rem;
   }
 
   #info {
@@ -58,7 +57,6 @@
 #input {
   display: flex;
   width: 80%;
-  flex-direction: row;
 }
 
 #picture {
@@ -85,31 +83,14 @@
   border-top: $border-style;
 }
 
-.post {
-  width: 10%;
-  min-width: 4rem;
-  background-color: aquamarine;
-  //global button layout
-  opacity: $opacityNoHoverButton;
-}
-.post:hover {
-  opacity: $opacityHoverButton;
-}
-
-input:not([type="image"]),
-select {
-  height: 1.5rem;
-}
 
 @media (max-width: 600px) {
   #input {
     flex-direction: column;
 
-    button {
+    .submit {
       align-self: center;
       margin-left: 0;
-      margin-bottom: 1em;
-      width: 50%;
       overflow: hidden;
     }
   }

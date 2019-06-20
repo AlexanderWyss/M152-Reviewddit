@@ -32,15 +32,10 @@ body {
   justify-content: center;
 }
 
-input {
+textarea, select, input {
   width: 80%;
 }
 
-textarea {
-  width: 80%;
-  max-width: 80%;
-  min-width: 10px;
-}
 .rating {
   display: flex;
   justify-content: center;
@@ -49,6 +44,7 @@ textarea {
 .titleCreate {
   padding-left: 10%;
 }
+
 h1 {
   font-size: calc(12px + 1vw);
   color: $mainTitleColor;
@@ -62,49 +58,24 @@ h2 {
   display: flex;
   justify-content: center;
 }
-select {
-  width: 80%;
-}
+
 .upload {
   display: flex;
   justify-content: center;
 }
 
-.uploadImage {
-  width: 7%;
-  min-width: 40px;
-}
-
 .ratingImage {
   width: 25%;
 }
-.submitButton {
-  float: right;
-  width: 20%;
-  min-width: 82px;
-  box-shadow:$box-shadow-bottom;
-  background-color: limegreen;
-  color: white;
-  opacity: $opacityNoHoverButton;
-  height: 2.5rem;
-}
-.submitButton:hover   {
-  opacity:$opacityHoverButton;
-}
-.cancelButton {
-  float: left;
-  width: 20%;
-  min-width: 82px;
-  box-shadow:$box-shadow-bottom;
-  background-color: red;
-  color: white;
-  opacity: $opacityNoHoverButton;
-  height: 2.5rem;
 
+.submit {
+  float: right;
 }
-.cancelButton:hover   {
-  opacity:$opacityHoverButton;
+
+.cancel {
+  float: left;
 }
+
 #footer {
   padding: 1rem 1rem 3rem 1rem;
 }
@@ -117,9 +88,4 @@ select {
   .frame {
     width: 100%;
   }
-}
-
-input:not([type="image"]):not([type="button"]),
-select {
-  height: 2rem;
 }

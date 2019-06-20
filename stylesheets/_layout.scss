@@ -83,6 +83,30 @@ header {
 .container {
   margin-top: $header-height;
   padding: 1rem;
+
+  input, select {
+    height: 2rem;
+    box-sizing: border-box;
+  }
+
+  input[type="button"] {
+    width: 6rem;
+    box-shadow:$box-shadow-bottom;
+    color: white;
+    opacity: $opacityNoHoverButton;
+
+    &:hover {
+      opacity: $opacityHoverButton;
+    }
+
+    &.submit {
+      background-color: limegreen;
+    }
+
+    &.cancel {
+      background-color: red;
+    }
+  }
 }
 
 footer {
