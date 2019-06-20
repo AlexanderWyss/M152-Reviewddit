@@ -12,7 +12,8 @@ function addPost(contentIndex = Math.floor(Math.random() * contents.length)) {
         .replace(/{{file}}/g, content.file)
         .replace(/{{text}}/g, content.text)
         .replace(/{{score}}/g, Math.floor(Math.random() * 1000))
-        .replace(/{{number-of-comments}}/g, Math.floor(Math.random() * 100))
+        .replace(/{{number-of-comments}}/g, Math.floor(Math.random() * 100))        
+        .replace(/{{rating}}/g, post.rating)
         .replace(/{{id}}/g, contentIndex)
     );
 }

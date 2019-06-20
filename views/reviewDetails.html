@@ -1,7 +1,7 @@
 <div id="body">
     <div id="card">
         <div id="title">
-            <h1>{{title}}</h1><img src="/images/sterneBewertungEmpty.png">
+            <h1>{{title}}</h1><img src="/images/rating/Rating{{rating}}.svg">
         </div>
         <div id="content">
             <div id="fileContainter">
@@ -20,29 +20,8 @@
                 <input type="button" class="submit" value="post" />
             </div>
             <div id="commentsection">
-                <div class="comment">
-                    <p>comment from usercomment from usercomment from usercomment from usercomment from user</p>
-                </div>
-                <div class="comment">
-                    <p>comment from usercomment from usercomment from usercomment from usercomment from user</p>
-                </div>
-                <div class="comment">
-                    <p>comment from usercomment from usercomment from usercomment from usercomment from user</p>
-                </div>
-                <div class="comment">
-                    <p>comment from usercomment from usercomment from usercomment from usercomment from user</p>
-                </div>
-                <div class="comment">
-                    <p>comment from usercomment from usercomment from usercomment from usercomment from user</p>
-                </div>
-                <div class="comment">
-                    <p>comment from usercomment from usercomment from usercomment from usercomment from user</p>
-                </div>
-                <div class="comment">
-                    <p>comment from usercomment from usercomment from usercomment from usercomment from user</p>
-                </div>
-                <div class="comment">
-                    <p>comment from usercomment from usercomment from usercomment from usercomment from user</p>
+                <div hidden class="comment">
+                    <p>{{comment-text}}</p>
                 </div>
             </div>
         </div>

@@ -29,6 +29,7 @@ router.get('/review-details/:id', function(req, res, next) {
         .replace(/{{file}}/g, post.file)
         .replace(/{{text}}/g, post.text)
         .replace(/{{score}}/g, Math.floor(Math.random() * 1000))
+        .replace(/{{rating}}/g, post.rating)
   });
 });
 router.get('/create-review', function(req, res, next) {
