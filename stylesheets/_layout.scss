@@ -121,6 +121,10 @@ header {
 
   .ratingButton{
     height: 1rem;
+
+    &:hover {
+      height: 1.2rem;
+    }
   }
 }
 
