@@ -23,6 +23,7 @@ body {
 .frame {
   border-style: solid;
   width: 75%;
+  background-color: $background-color-acent;
 }
 
 .input {
@@ -80,7 +81,7 @@ select {
   float: right;
   width: 20%;
   min-width: 82px;
-  box-shadow:$buttonHover;
+  box-shadow:$box-shadow-bottom;
   background-color: limegreen;
   color: white;
   opacity: $opacityNoHoverButton;
@@ -93,7 +94,7 @@ select {
   float: left;
   width: 20%;
   min-width: 82px;
-  box-shadow:$buttonHover;
+  box-shadow:$box-shadow-bottom;
   background-color: red;
   color: white;
   opacity: $opacityNoHoverButton;

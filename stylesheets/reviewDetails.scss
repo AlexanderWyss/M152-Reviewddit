@@ -12,6 +12,7 @@
   margin-bottom: 2em;
   border-style: solid;
   border-width: 2px;
+  background-color: $background-color-acent;
 }
 
 #title {
@@ -89,7 +90,7 @@
   width: 10%;
   min-width: 4rem;
   background-color: aquamarine;
-  //box-shadow: $buttonHover;
+  //global button layout
   opacity: $opacityNoHoverButton;
 }
 .post:hover {

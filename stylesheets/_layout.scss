@@ -6,6 +6,7 @@ html {
 body {
   font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0px;
+  background-color: $background-color;
 }
 
 $header-height: 4rem;
@@ -16,8 +17,8 @@ header {
   background-color: white;
   height: $header-height;
   width: 100%;
-  border-bottom: 1px solid black;
   display: flex;
+  box-shadow: $box-shadow-bottom;
 
   .logo-container {
     display: flex;
@@ -93,8 +94,6 @@ footer {
   align-items: center;
   background-color: white;
   height: 2rem;
-  $margin: 1rem;
-  margin: 0rem $margin;
-  width: calc(100% - 2 * #{$margin});
-  border-top: 1px solid lightgray;
+  width: 100%;
+  box-shadow: $box-shadow-top;
 }

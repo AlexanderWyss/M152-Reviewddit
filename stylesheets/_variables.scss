@@ -4,6 +4,10 @@ $logoColor: #0066adff;
 $titleColor: #0066adff;
 $mainTitleColor: blue;
 //Buttons
-$buttonHover: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+$box-shadow-bottom: 0 12px 16px 0 rgba(0,0,0,0.24);
+$box-shadow-top: 0 -12px 16px 0 rgba(0,0,0,0.24);
 $opacityHoverButton: 1;
 $opacityNoHoverButton: 0.6;
+
+$background-color: lightgrey;
+$background-color-acent: white;
