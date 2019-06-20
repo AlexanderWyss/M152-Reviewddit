@@ -17,11 +17,12 @@ body {
 #header {
   display: flex;
   justify-content: center;
-  border-bottom: solid;
+  border-bottom: $border-style;
 }
 
 .frame {
-  border-style: solid;
+  border: $border-style;  
+  border-radius: $border-radius;
   width: 75%;
   background-color: $background-color-acent;
 }

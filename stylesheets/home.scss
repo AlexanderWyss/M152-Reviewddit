@@ -8,7 +8,8 @@
   $content-margin: 0.3rem;
   $title-bottom-height: 2.5rem;
   .post {
-    border: 1px solid black;
+    border: $border-style;    
+    border-radius: $border-radius;
     padding: 0.3rem;
     margin: 0.5rem;
     width: 18rem;
