@@ -38,30 +38,25 @@
   flex-direction: column;
   align-items: center;
 
-  .commentInput {
-    margin-bottom: 1rem;
+  > div {
+    width: 90%;
+    margin: 0.5rem 0;
+  }
+
+  .commentInput {    
     width: 100%;
   }
 
   .submit {
     margin-left: 1rem;    
-    margin-bottom: 1rem;
-  }
-
-  #info {
-    margin: 0 1em 1em 1em;
-    width: 90%;
   }
 }
 
 #input {
   display: flex;
-  width: 80%;
 }
 
-#picture {
-  margin: 1em;
-  width: 90%;
+#fileContainter {
   display: flex;
   justify-content: center;
   word-wrap: normal;
@@ -69,7 +64,6 @@
 }
 
 #commentsection {
-  width: 90%;
   display: flex;
   font-size: 80%;
   flex-direction: column;

@@ -1,21 +1,19 @@
 <div id="body">
     <div id="card">
         <div id="title">
-            <h1>Big Post</h1><img src="images/sterneBewertungEmpty.png">
+            <h1>{{title}}</h1><img src="images/sterneBewertungEmpty.png">
         </div>
         <div id="content">
-            <div id="picture">
-                <img class="reviewImage" src="images/index.png" />
+            <div id="fileContainter">
+                {{file}}
             </div>
             <div id="info">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                {{text}}
+            </div>
+            <div>
+                <input type="image" src="images/like.svg" class="ratingButton" />
+                <span>{{score}}</span>
+                <input type="image" src="images/dislike.svg" class="ratingButton" />
             </div>
             <div id="input">
                 <input type="text" class="commentInput" placeholder="Write a comment..."></input>
