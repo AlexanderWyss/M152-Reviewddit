@@ -119,16 +119,16 @@ header {
     }
   }
 
-  .score{
+  .score {
     input {
-    height: 1rem;
-    margin: 0.2rem 0.2rem 0 0;
+      height: 1rem;
+      margin: 0.2rem 0.2rem 0 0;
 
-    &:hover {
-      height: 1.2rem;      
-      margin: 0;
+      &:hover {
+        height: 1.2rem;
+        margin: 0;
+      }
     }
-  }
 
     span {
       margin-bottom: 0.2rem;

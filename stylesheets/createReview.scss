@@ -1,10 +1,12 @@
 @import "variables";
 @import "stars";
+
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 .create-review {
   display: none;
 }
@@ -13,7 +15,9 @@ body {
   display: flex;
   justify-content: center;
 
-  textarea, select, input {
+  textarea,
+  select,
+  input {
     width: 80%;
   }
 }
@@ -25,7 +29,7 @@ body {
 }
 
 .frame {
-  border: $border-style;  
+  border: $border-style;
   border-radius: $border-radius;
   width: 75%;
   background-color: $background-color-acent;
@@ -49,11 +53,13 @@ h1 {
   font-size: calc(12px + 1vw);
   color: $mainTitleColor;
 }
+
 h2 {
   font-size: calc(12px + 0.7vw);
   color: $titleColor;
 
 }
+
 .dropdownCategories {
   display: flex;
   justify-content: center;
@@ -79,6 +85,7 @@ h2 {
 #footer {
   padding: 1rem 1rem 3rem 1rem;
 }
+
 @media (max-width: 480px) {
   .titleCreate {
     text-align: center;

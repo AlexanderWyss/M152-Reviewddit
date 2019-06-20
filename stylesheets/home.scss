@@ -1,4 +1,5 @@
 @import "variables";
+
 #home-container {
   display: flex;
   justify-content: center;
@@ -7,8 +8,9 @@
   $max-post-height: 23rem;
   $content-margin: 0.3rem;
   $title-bottom-height: 2.5rem;
+
   .post {
-    border: $border-style;    
+    border: $border-style;
     border-radius: $border-radius;
     margin: 0.5rem;
     width: 20rem;
@@ -16,7 +18,7 @@
     word-wrap: break-word;
     background-color: $background-color-acent;
 
-    > a {
+    >a {
       color: inherit;
       text-decoration: none;
     }
@@ -68,8 +70,10 @@
       box-shadow: $box-shadow-top;
     }
 
-    .bottom, .title, .content-preview {
-        padding: 0 0.3rem;
+    .bottom,
+    .title,
+    .content-preview {
+      padding: 0 0.3rem;
     }
   }
 }
