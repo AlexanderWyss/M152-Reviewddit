@@ -44,11 +44,6 @@
     margin: 0.5rem 0;
   }
 
-  .fileContainer {
-    width: auto;
-    max-width: 90%;
-  }
-
   .commentInput {    
     width: 100%;
   }
@@ -66,8 +61,12 @@
 #fileContainter {
   display: flex;
   justify-content: center;
-  word-wrap: normal;
-  max-height: 70vh;
+  width: 100%;
+
+  > * {
+    max-height: 70vh;
+    max-width: 90%;
+  }
 }
 
 #commentsection {
