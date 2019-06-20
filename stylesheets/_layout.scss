@@ -76,6 +76,13 @@ header {
         display: none;
       }
     }
+
+    .create-review {
+      position: fixed;
+      right: 0.5rem;
+      bottom: 2.5rem;
+      height: 3rem !important;
+    }
   }
 }
 
