@@ -10,16 +10,15 @@
   flex-direction: column;
   overflow: hidden;
   margin-bottom: 2em;
-  border-style: solid;
-  border-width: 2px;
+  border: $border-style;
+  border-radius: $border-radius;
   background-color: $background-color-acent;
 }
 
 #title {
   padding-left: 1em;
   display: flex;
-  border-bottom: solid;
-  border-width: 2px;
+  border-bottom: $border-style;
 
   img {
     width: 17%;
@@ -83,7 +82,7 @@
 
 .comment {
   padding-left: 5px;
-  border-top: 1px solid black;
+  border-top: $border-style;
 }
 
 .post {
