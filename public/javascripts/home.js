@@ -48,11 +48,39 @@ httpRequest.open('GET', '/allPosts', true);
 httpRequest.send();
 
 function upvote(id) {
-    var score = document.querySelector(`#post-${id} .scoreText`);
-    score.innerText = parseInt(score.innerText) + 1;
+    var score = getScore(id);
+    addPoint(score, 1);
+    score.querySelector('.upvoted').removeAttribute('hidden');
+    score.querySelector('.upvote').setAttribute('hidden', '');
+    
+}
+
+function removeUpvote(id) {
+    var score = getScore(id);
+    addPoint(score, -1);
+    score.querySelector('.upvote').removeAttribute('hidden');
+    score.querySelector('.upvoted').setAttribute('hidden', '');
 }
 
 function downvote(id) {
-    var score = document.querySelector(`#post-${id} .scoreText`);
-    score.innerText = parseInt(score.innerText) - 1;
+    var score = getScore(id);
+    addPoint(score, -1);
+    score.querySelector('.downvoted').removeAttribute('hidden');
+    score.querySelector('.downvote').setAttribute('hidden', '');
+}
+
+function removeDownvote(id) {
+    var score = getScore(id);
+    addPoint(score, 1);
+    score.querySelector('.downvote').removeAttribute('hidden');
+    score.querySelector('.downvoted').setAttribute('hidden', '');
+}
+
+function getScore(id) {
+    return document.querySelector(`#post-${id} .score`);
+}
+
+function addPoint(score, value) {
+    var scoreText = score.querySelector('.scoreText');
+    scoreText.innerText = parseInt(scoreText.innerText) + value;
 }
