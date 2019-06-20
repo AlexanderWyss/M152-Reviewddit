@@ -1,20 +1,21 @@
 <div class="body">
     <div id="home-container">
         <div class="post" hidden>
-            <a href="/review-details">
+            <a href="/review-details/{{id}}">
                 <div class="title">
                     <span><b>{{title}}</b></span>
-                    <img class="ratingImage" src="images/sterneBewertungEmpty.png" name="ratingImage">
+                    <img class="ratingImage" src="/images/sterneBewertungEmpty.png" name="ratingImage">
                 </div>
                 <div class="content-preview">
-                    {{content}}
+                    {{file}}
+                    <p>{{text}}</p>
                 </div>
             </a>
             <div class="bottom">
                 <div>
-                    <input type="image" src="images/like.svg" class="ratingButton" />
+                    <input type="image" src="/images/like.svg" class="ratingButton" />
                     <span>{{score}}</span>
-                    <input type="image" src="images/dislike.svg" class="ratingButton" />
+                    <input type="image" src="/images/dislike.svg" class="ratingButton" />
                 </div>
                 <div>
                     <small>{{number-of-comments}} Kommentare</small>
