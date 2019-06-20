@@ -19,7 +19,7 @@ exports.posts = [{
     {
         title: 'Beckenried',
         file: `<video src="/reviews/video/beckenriedReview.mp4" controls></video>`,
-        text: 'Beckenried auch bezeichnet als schönstes Dorf am schönsten See. Ist ein sehr altertümlicher Ort, den Leuten liegt viel an ihren Traditionen, wie zum Beispiel das Tricheln, was mich an den KKK erinnert',
+        text: 'Beckenried auch bezeichnet als schönstes Dorf am schönsten See. Ist ein sehr altertümlicher Ort, den Leuten liegt viel an ihren Traditionen, wie zum Beispiel das Tricheln',
         rating: 2
     },
     {
@@ -50,7 +50,13 @@ exports.posts = [{
         title: 'Passoa',
         file: `<img src="/reviews/image/passoaReview.jpg">`,
         text: 'Ich mag keine starken Getränke. Passoa kann mit verschiedenen Säften gemischt werden und schmeckt trotzdem gut. Der Nachteil dieser Produkte ist, dass es in bestimmten Orten, in denen ich lebe, schwer zu finden ist. Aber wenn du Fruchtgetränke magst, solltest du Passoa unbedingt probieren.',
-        rating: 2
+        rating: 3
+    },
+    {
+        title: 'Melchsee Frutt',
+        file: `<video src="/reviews/video/melchseeFruttReview.mp4" controls></video>`,
+        text: 'Super Schlittengebiet, macht besonders Freude am morgen, wenn die Piste noch in top zustand ist. Mit freunde Spass garantiert.',
+        rating: 5
     }
 ];
 
