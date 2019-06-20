@@ -13,7 +13,7 @@ function addPost(contentIndex = Math.floor(Math.random() * contents.length)) {
         .replace(/{{text}}/g, content.text)
         .replace(/{{score}}/g, Math.floor(Math.random() * 1000))
         .replace(/{{number-of-comments}}/g, Math.floor(Math.random() * 100))        
-        .replace(/{{rating}}/g, post.rating)
+        .replace(/{{rating}}/g, content.rating)
         .replace(/{{id}}/g, contentIndex)
     );
 }

@@ -35,6 +35,11 @@
       height: calc(#{$max-post-height} - (#{$content-margin} * 2) - (#{$title-bottom-height} * 2));
       overflow: hidden;
 
+      .file-container {
+        display: flex;
+        justify-content: center;
+      }
+
       p {
         margin: 0;
       }
