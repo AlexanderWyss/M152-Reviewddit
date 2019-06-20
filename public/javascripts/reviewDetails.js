@@ -38,3 +38,13 @@ function postComment() {
         input.value = '';
     }
 }
+
+function upvote() {
+    var score = document.querySelector(`.scoreText`);
+    score.innerText = parseInt(score.innerText) + 1;
+}
+
+function downvote() {
+    var score = document.querySelector(`.scoreText`);
+    score.innerText = parseInt(score.innerText) - 1;
+}

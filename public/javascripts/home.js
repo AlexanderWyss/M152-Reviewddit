@@ -46,3 +46,13 @@ httpRequest.onreadystatechange = function () {
 };
 httpRequest.open('GET', '/allPosts', true);
 httpRequest.send();
+
+function upvote(id) {
+    var score = document.querySelector(`#post-${id} .scoreText`);
+    score.innerText = parseInt(score.innerText) + 1;
+}
+
+function downvote(id) {
+    var score = document.querySelector(`#post-${id} .scoreText`);
+    score.innerText = parseInt(score.innerText) - 1;
+}
