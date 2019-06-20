@@ -12,6 +12,10 @@ body {
 .postReview {
   display: flex;
   justify-content: center;
+
+  textarea, select, input {
+    width: 80%;
+  }
 }
 
 #header {
@@ -30,10 +34,6 @@ body {
 .input {
   display: flex;
   justify-content: center;
-}
-
-textarea, select, input {
-  width: 80%;
 }
 
 .rating {
