@@ -59,4 +59,3 @@ exports.posts = [{
         rating: 5
     }
 ];
-
