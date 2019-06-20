@@ -17,19 +17,19 @@ exports.posts = [{
         rating: 4
     },
     {
-        title: 'Video',
+        title: 'Beckenried',
         file: `<video src="/reviews/video/beckenriedReview.mp4" controls></video>`,
-        text: 'Beckenried auch bezeichnet als schönstes Dorf am schönsten See. Ist ein sehr altertümlicher Ort, den Leuten liegt viel an ihren Traditionen, wie zum Beispiel das Tricheln, was mich an die KKK erinnert',
+        text: 'Beckenried auch bezeichnet als schönstes Dorf am schönsten See. Ist ein sehr altertümlicher Ort, den Leuten liegt viel an ihren Traditionen, wie zum Beispiel das Tricheln, was mich an den KKK erinnert',
         rating: 2
     },
     {
-        title: 'Video',
+        title: 'Lumnezia',
         file: `<video src="/reviews/video/lumneziaReview.mp4" controls></video>`,
         text: 'Ist ein sehr ruhiger und wunderschöner Ort. Ist der ideale Ort für Familien mit Kinder oder einfach nur um sich zu erholen. Es gibt einen Badesee und auch eine Möglichkeit einzukaufen.',
         rating: 4
     },
     {
-        title: 'Image 2',
+        title: 'Tailor made suits',
         file: `<img src="/reviews/image/anzugReview.jpg">`,
         text: 'Massgeschneiderter Anzug für wenig Geld und gute Qualität. Ausserdem nettes Personal, welche einmal alles verkaufen wollen.',
         rating: 5
@@ -38,7 +38,7 @@ exports.posts = [{
         title: 'Vierwaldstättersee',
         file: `<img src="/reviews/image/vierwaldstaettersee.jpg">`,
         text: 'Wunderschöner See in der Schweiz, wenn man sich Luzern anschaut gibt es genügend Wanderwege die einen tollen Ausblick auf den See bieten',
-        rating: 1
+        rating: 4
     },
     {
         title: 'Protein shake',
