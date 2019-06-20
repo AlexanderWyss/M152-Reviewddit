@@ -94,8 +94,6 @@ footer {
   align-items: center;
   background-color: white;
   height: 2rem;
-  $margin: 1rem;
-  margin: 0rem $margin;
-  width: calc(100% - 2 * #{$margin});
+  width: 100%;
   border-top: 1px solid lightgray;
 }
