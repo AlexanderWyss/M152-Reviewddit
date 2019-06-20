@@ -4,14 +4,14 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  $max-post-height: 18rem;
+  $max-post-height: 23rem;
   $content-margin: 0.3rem;
   $title-bottom-height: 2.5rem;
   .post {
     border: $border-style;    
     border-radius: $border-radius;
     margin: 0.5rem;
-    width: 18rem;
+    width: 20rem;
     height: $max-post-height;
     word-wrap: break-word;
     background-color: $background-color-acent;
