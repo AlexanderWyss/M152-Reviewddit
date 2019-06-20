@@ -2,6 +2,7 @@ var commentElement = document.getElementsByClassName('comment')[0].cloneNode(tru
 commentElement.removeAttribute("hidden");
 var comment = commentElement.outerHTML;
 var commentSection = document.getElementById('commentsection');
+var input = document.getElementById('commentInput');
 
 var comments = [
     'Top review',
@@ -16,12 +17,24 @@ var comments = [
     'Your review was very helpfull, thx'
 ]
 
-function addComent(commentIndex = Math.floor(Math.random() * comments.length)) {
-    commentSection.insertAdjacentHTML('beforeend',
-        comment.replace(/{{comment-text}}/g, comments[commentIndex])
+function addComent(text) {
+    commentSection.insertAdjacentHTML('afterbegin',
+        comment.replace(/{{comment-text}}/g, text)
     );
 }
 
 for (var i = 0; i <  Math.floor(Math.random() * 50); i++) {
-    addComent();
+    addComent(comments[Math.floor(Math.random() * comments.length)]);
+}
+
+function isEmptyOrSpaces(str){
+    return str === null || str.match(/^ *$/) !== null;
+}
+
+function postComment() {
+    var text = input.value;
+    if (!isEmptyOrSpaces(text)) {
+        addComent(text);
+        input.value = '';
+    }
 }
