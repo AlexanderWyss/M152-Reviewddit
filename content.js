@@ -25,7 +25,7 @@ exports.posts = [{
     {
         title: 'Lumnezia',
         file: `<video src="/reviews/video/lumneziaReview.mp4" controls></video>`,
-        text: 'Ist ein sehr ruhiger und wunderschöner Ort. Ist der ideale Ort für Familien mit Kinder oder einfach nur um sich zu erholen. Es gibt einen Badesee und auch eine Möglichkeit einzukaufen.',
+        text: 'Ist ein sehr ruhiger und wunderschöner Ort. Ist der ideale Ort für Familien mit Kinder oder einfach nur um sich zu erholen. Es gibt einen Badesee und auch eine Möglichkeit einzukaufen. Es ist auch unter dem Namen Tal der Sonne bekannt und dies mit Recht.',
         rating: 4
     },
     {
