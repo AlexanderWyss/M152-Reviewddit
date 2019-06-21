@@ -1,6 +1,6 @@
 <div class="body">
     <div id="home-container">
-        <div class="post" id="post-{{id}}" hidden>
+        <div class="post" hidden>
             <a href="/review-details/{{id}}">
                 <div class="title">
                     <span><b>{{title}}</b></span>
@@ -13,12 +13,11 @@
             </a>
             <div class="bottom">
                 <div class="score">
-                    <input type="image" class="upvoted" src="/images/liked.svg" onclick="removeUpvote('{{id}}')"
-                        hidden />
-                    <input type="image" class="upvote" src="/images/like.svg" onclick="upvote('{{id}}')" />
+                    <input type="image" class="upvoted" src="/images/liked.svg" onclick="removeUpvote(this)" hidden />
+                    <input type="image" class="upvote" src="/images/like.svg" onclick="upvote(this)" />
                     <span class="scoreText">{{score}}</span>
-                    <input type="image" class="downvote" src="/images/dislike.svg" onclick="downvote('{{id}}')" />
-                    <input type="image" class="downvoted" src="/images/disliked.svg" onclick="removeDownvote('{{id}}')"
+                    <input type="image" class="downvote" src="/images/dislike.svg" onclick="downvote(this)" />
+                    <input type="image" class="downvoted" src="/images/disliked.svg" onclick="removeDownvote(this)"
                         hidden />
                 </div>
                 <div>

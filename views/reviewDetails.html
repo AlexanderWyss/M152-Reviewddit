@@ -11,11 +11,12 @@
                 {{text}}
             </div>
             <div class="score">
-                <input type="image" class="upvoted" src="/images/liked.svg" onclick="removeUpvote()" hidden />
-                <input type="image" class="upvote" src="/images/like.svg" onclick="upvote()" />
+                <input type="image" class="upvoted" src="/images/liked.svg" onclick="removeUpvote(this)" hidden />
+                <input type="image" class="upvote" src="/images/like.svg" onclick="upvote(this)" />
                 <span class="scoreText">{{score}}</span>
-                <input type="image" class="downvote" src="/images/dislike.svg" onclick="downvote()" />
-                <input type="image" class="downvoted" src="/images/disliked.svg" onclick="removeDownvote()" hidden />
+                <input type="image" class="downvote" src="/images/dislike.svg" onclick="downvote(this)" />
+                <input type="image" class="downvoted" src="/images/disliked.svg" onclick="removeDownvote(this)"
+                    hidden />
             </div>
             <div id="input">
                 <input type="text" id="commentInput" placeholder="Write a comment..."></input>
