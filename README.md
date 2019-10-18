@@ -7,4 +7,3 @@ Mit Nodejs lokal ausführen:
 
 Port: 3002
 
-Oder: http://wyssddns.internet-box.ch/
